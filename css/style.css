@@ -1,0 +1,302 @@
+* {
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+
+/* actual css start */
+
+.topheader {
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(to right, rgba(17, 17, 7, 0.37), rgba(255, 136, 0, 0)), url(../images/bge.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    overflow: hidden;
+}
+
+.topheader svg {
+    position: absolute;
+    bottom: 0;
+}
+
+.navbar {
+    box-shadow: 0 0 20px rgb(0, 0, 0, .4);
+    background-color: rgb(26, 20, 51);
+}
+
+.nav-item a {
+    font-size: 1.2rem;
+    color: #ffffff!important;
+}
+
+.center_part {
+    width: 100%;
+    height: 90vh;
+    margin: auto;
+    display: block;
+    position: relative;
+    top: 45%;
+    transform: translateY(-50%);
+    z-index: 1;
+}
+
+.center_part h3 {
+    position: absolute;
+    top: 38%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 5rem;
+    width: 100%;
+}
+
+.search-box {
+    background-color: rgba(7, 8, 58, 0.479);
+    padding: 5px 10px;
+    border-radius: 20px;
+    text-align: center;
+    margin: 5px 0;
+    background: transparent;
+}
+
+.search-box:hover .search-txt {
+    width: 160px;
+}
+
+.search-txt {
+    background: transparent;
+    outline: none;
+    color: #ffffff;
+    letter-spacing: 2px;
+    text-align: center;
+    border: none;
+    background: transparent;
+    width: 0px;
+    transition-duration: 710ms;
+}
+
+.search-btn {
+    color: rgb(255, 255, 255);
+    text-align: center;
+}
+
+.search-btn:hover {
+    color: rgba(198, 253, 255, 0.746);
+}
+
+::-webkit-input-placeholder {
+    color: rgba(226, 241, 241, 0.753);
+}
+
+::placeholder {
+    color: #e9dfdfc7;
+}
+
+.logbn button {
+    padding: 8px 40px;
+    border-radius: 40px;
+    border: none;
+    outline: none;
+    text-transform: capitalize;
+}
+
+.navbar-brand {
+    animation-duration: 400ms;
+    animation: linear infinite;
+    animation-direction: alternate;
+}
+
+#typed {
+    font-size: 1.7rem;
+    text-transform: capitalize;
+    color: #ffffff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#typed::after {
+    content: '|';
+    display: inline;
+    -webkit-animation: blink 0.7s infinite;
+    -moz-animation: blink 0.7s infinite;
+    animation: blink 0.7s infinite;
+}
+
+
+/* Cursor */
+
+.typed-cursor {
+    display: none;
+    opacity: 0;
+}
+
+@keyframes blink {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes blink {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@-moz-keyframes blink {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.main_TXT {
+    color: rgb(255, 243, 138);
+}
+
+.social_icons {
+    position: relative;
+    top: 56%;
+    display: block;
+    margin: auto;
+    width: 50%;
+    padding: 5px 0;
+    text-align: center;
+}
+
+.social_icons a {
+    text-align: center;
+    padding: 8px 18px;
+    background-image: linear-gradient(to right, #d9d9d9, #fff);
+    box-shadow: inset -3px -4px 20px rgb(0, 0, 0, .1);
+    border-radius: 30px;
+    font-size: 2rem;
+    margin: 0 0px;
+    position: relative;
+    color: #000000;
+}
+
+.social_icons a:hover {
+    box-shadow: none;
+}
+
+.fa-facebook-square:hover {
+    color: rgb(8, 8, 185);
+}
+
+.fa-instagram:hover {
+    color: rgb(251, 18, 18);
+}
+
+.fa-whatsapp:hover {
+    color: rgb(18, 184, 27);
+}
+
+.fa-twitter:hover {
+    color: rgb(93, 209, 255);
+}
+
+.fa-youtube-play:hover {
+    color: rgb(255, 127, 123);
+}
+
+.fa-google:hover {
+    color: rgb(157, 157, 192);
+}
+
+
+/* If fade out option is set */
+
+.buttons_center {
+    position: relative;
+    top: 65%;
+    left: 50%;
+    width: 40%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.buttons_center button {
+    margin: 0 10px;
+    padding: 10px 40px;
+    font-size: 1.2rem;
+    border: none;
+    outline: none;
+    border-radius: 30px;
+    text-transform: uppercase;
+    box-shadow: 0 0 20px rgb(0, 0, 0, .3);
+    background-image: linear-gradient(to right, red, orange);
+    transition-duration: 500ms;
+}
+
+.buttons_center button:hover {
+    box-shadow: none;
+}
+
+.sh_str {
+    background-color: rgba(76, 77, 25, 0.349);
+}
+
+.start_pro {
+    background-color: rgb(110, 67, 139);
+    position: relative;
+}
+
+.start_pro svg {
+    position: absolute;
+    bottom: 0;
+}
+
+
+/*@meadi queries */
+
+@media(max-width:768px) {
+    .navbar {
+        text-align: center;
+    }
+    .center_part h3 {
+        font-size: 3rem;
+    }
+    #typed {
+        font-size: 1.4rem;
+    }
+    .social_icons {
+        top: 60%;
+    }
+    .social_icons a {
+        line-height: 2;
+        padding: 2px 11px;
+        font-size: 1.5rem;
+    }
+    .buttons_center {
+        width: 100%;
+    }
+    .buttons_center button {
+        margin: 0 3px;
+        padding: 10px 40px;
+        font-size: 1rem;
+    }
+}
